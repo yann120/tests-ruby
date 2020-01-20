@@ -1,5 +1,17 @@
 require_relative '../lib/06_pig_latin'
 
+describe "#is_vowel" do
+  it "detect e letter" do
+    expect(is_vowel?('e')).to eq(true)
+  end
+  it "detect o letter" do
+    expect(is_vowel?('o')).to eq(true)
+  end
+  it "detect a consonne n" do
+    expect(is_vowel?('n')).to eq(false)
+  end
+end
+
 describe "#translate" do
 
   it "translates a word beginning with a vowel" do
